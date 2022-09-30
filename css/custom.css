@@ -1,0 +1,23 @@
+:root{
+    --primary: #011D20;
+    --secundary: #340300;
+    --white-trasparent: rgba(255, 255, 255, 0.582);
+}
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--primary);
+}
+header .logo svg{
+    fill: var(--white-trasparent);
+    width: 100px;
+    display:flex;
+    justify-content:space-ar ;
+}
