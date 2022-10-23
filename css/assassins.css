@@ -1,0 +1,23 @@
+
+.container{
+    display: flex;
+}
+.container p{
+    color: var(--white-trasparent);
+    text-align: justify;
+} 
+.desc{
+    width: 600px;
+}
+.carousel-inner {
+    /* position: absolute; */
+    width: 45%;
+}
+#carouselhome{
+    margin-top: 40px;
+
+}
+.section1{
+    width: 800px;
+    /* display: flex; */
+}
