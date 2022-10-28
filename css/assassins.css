@@ -8,10 +8,60 @@
     margin-left: 20px;
 }
 .carousel-inner {
-    width: 45%;
+    width: 50%;
 }
 #carouselhome{
+    padding: 5px;
     margin-top: 40px;
     display: flex;
+}
+#carouselhome li{
+    margin-bottom: 80px;
 
 }
+.carousel-indicators{
+    margin-top: -10px;
+}
+.carousel-control-prev{
+    margin-right: 50px;
+    margin-top: 170px;
+}
+.carousel-control-next{
+    margin-top: 170px;
+}
+.section1{
+    background-color: #0000002f ;
+    padding: 22px;
+}
+.section1 h1{
+    color: white;
+}
+ svg{
+    width: 20px;
+}
+svg:hover{
+    fill: yellow;
+}
+.banner-compra{
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+.section2{
+    margin-top: 50px;
+}
+.section2 hr{
+    height: -2px;
+    background-color: white;
+}
+.section2 h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.req{
+    display: flex;
+    justify-content: space-between;
+}
+
