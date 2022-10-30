@@ -14,7 +14,7 @@
         <div class="container-fluid">
          
             <nav class="navbar navbar-expand-lg">
-                <a href="/index.html">
+                <a href="index.html">
                     <div class="logo">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -216,10 +216,11 @@
                     </ol>
                 </div> <!--carousel-inner-->
             <div class="desc">
-                <p>Viva e respire como Ezio, um lendário Mestre Assassino, em sua luta duradoura contra a poderosa Ordem dos Templários. Ele deve viajar para a maior cidade da Itália, Roma, centro de poder, ganância e corrupção para atacar o coração do inimigo. <br><br>
-                Derrotar os tiranos corruptos entrincheirados lá exigirá não apenas força, mas liderança, pois Ezio comanda uma Irmandade inteira que se unirá ao seu lado. Somente trabalhando juntos os Assassinos podem derrotar seus inimigos mortais. <br> <br>
-                E pela primeira vez, introduzindo uma camada multijogador premiada que permite que você escolha entre uma ampla variedade de personagens únicos, cada um com suas próprias armas e técnicas de assassinato, e combine suas habilidades contra outros jogadores de todo o mundo. <br><br>
-                É hora de se juntar à Irmandade.
+                <p>
+                    Viva e respire como Ezio, um lendário Mestre Assassino, em sua luta duradoura contra a poderosa Ordem dos Templários. Ele deve viajar para a maior cidade da Itália, Roma, centro de poder, ganância e corrupção para atacar o coração do inimigo. <br><br>
+                    Derrotar os tiranos corruptos entrincheirados lá exigirá não apenas força, mas liderança, pois Ezio comanda uma Irmandade inteira que se unirá ao seu lado. Somente trabalhando juntos os Assassinos podem derrotar seus inimigos mortais. <br> <br>
+                    E pela primeira vez, introduzindo uma camada multijogador premiada que permite que você escolha entre uma ampla variedade de personagens únicos, cada um com suas próprias armas e técnicas de assassinato, e combine suas habilidades contra outros jogadores de todo o mundo. <br><br>
+                    É hora de se juntar à Irmandade.
                 </p>
             </div>
         </div>
@@ -242,7 +243,7 @@
     </div>
 
         <div class="section2">
-            <img src="img/Comprar.png" alt="" class="banner-compra">
+            <a id="compra"><img src="img/Comprar.png" alt="" class="banner-compra"></a>
             <hr>
             <h4>Requisitos De Sistema</h4>
             <div class="req">
@@ -278,7 +279,24 @@
             
         </div>
     </div>
-
+       <div class="modal">
+        <div class="content">
+            <form action="">
+                <label for="">Nome</label>
+                <input type="text">
+                <label for="">Selecione uma forma de pagamento</label>
+                <select id="estado" name="estado">
+                    <option value="pix">Pix</option>
+                    <option value="credito">Cartão de crédito</option>
+                    <option value="debito">Cartão de débito</option>
+                </select>
+                <label for="">Número do Cartão</label>
+                <input type="text">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+       </div>
+    <script src="js/assasins.js"></script>
     <script src="js/jquery-3.6.1.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
