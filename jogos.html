@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jogos.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="container-fluid">
          
             <nav class="navbar navbar-expand-lg">
-                <a href="/index.html">
+                <a href="index.html">
                     <div class="logo">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -171,19 +171,114 @@
         </div>
     </header>
 
-    <section>
+    <section class="banner_jogos">
         <img src="img/Play (1).png" alt="">
     </section>
 
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+    <div class="container">
+        <section class="jogosComprar">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/mortalKombat.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mortal Kombat 11</h5>
+                    <p class="card-text">R$ 159.99</p>
+                    <a href="#" id="compra" class="btn">Comprar</a>
+                </div>
+            </div>
 
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/eldenRing.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Elden Ring</h5>
+                    <p class="card-text">R$ 249.90</p>
+                    <a href="#" id="compra" class="btn">Comprar</a>
+                </div>
+            </div>
+            
+            <div class="cards-section1">
+                <div class="card" id="cardStray" style="width: 18rem;">
+                    <img class="card-img-top" src="img/straycompra.jpg" alt="Card image cap">
+                    <div class="card-body" id="card-bodyStray">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"> R$ 63.79</p>
+                        <a href="#"  class="btn" id="compraStray">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card" id="cardStray2" style="width: 18rem;">
+                    <img class="card-img-top" src="img/newworld.jpg" alt="Card image cap">
+                    <div class="card-body" id="card-bodyStray">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"> R$ 75.49</p>
+                        <a href="#" class="btn" id="compraStray">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jogosComprar1">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/resident.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Resident Evil Village</h5>
+                    <p class="card-text">R$ 139.90</p>
+                    <a href="#" id="compra" class="btn">Comprar</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/ark.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ARK: Survival Evolved</h5>
+                    <p class="card-text">R$ 97.99</p>
+                    <a href="#" id="compra" class="btn" onclick="">Comprar</a>
+                </div>
+            </div>
+                
+            <div class="cards-section1">
+    
+                <div class="card" id="cardStray" style="width: 18rem;">
+                    <img class="card-img-top" src="img/subnautica.jpeg" alt="Card image cap">
+                    <div class="card-body" id="card-bodyStray">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"> R$ 57.99</p>
+                         <a href="#" class="btn" id="compraStray">Comprar</a>
+                    </div>
+                </div>
+        
+                <div class="card" id="cardStray2" style="width: 18rem;">
+                    <img class="card-img-top" src="img/skyrim.jpeg" alt="Card image cap">
+                    <div class="card-body" id="card-bodyStray">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"> R$ 149.90</p>
+                        <a href="#" class="btn" id="compraStray">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal">
+            <div class="content">
+                <form action="">
+                    <label for="">Nome</label>
+                    <input type="text">
+                    <label for="">Selecione uma forma de pagamento</label>
+                    <select id="estado" name="estado">
+                        <option value="pix">Pix</option>
+                        <option value="credito">Cartão de crédito</option>
+                        <option value="debito">Cartão de débito</option>
+                    </select>
+                    <label for="">Número do Cartão</label>
+                    <input type="text">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer></footer>
+
+    <script src="js/assasins.js"></script>
     <script src="js/jquery-3.6.1.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>

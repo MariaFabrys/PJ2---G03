@@ -32,3 +32,10 @@ header .logo svg{
     width: 200px;
     margin-right: 100px;
 }
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--white-trasparent);
+    display: flex;
+    align-items: flex-end;
+}
