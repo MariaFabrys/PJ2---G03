@@ -156,8 +156,8 @@
                                 Listas
                             </a>
                             <div class="dropdown-menu w-10">
-                                <a href="#" class="dropdown-item">Desejos</a>
-                                <a href="#" class="dropdown-item">Compras</a>
+                                <a href="desejo.html" class="dropdown-item">Desejos</a>
+                                <a href="compras.html" class="dropdown-item">Compras</a>
                             </div>
                         </li>
                     </ul>
@@ -281,16 +281,16 @@
     </div>
     <div class="modal">
         <div class="content">
-            <form action="">
-                <label for="">Nome</label>
-                <input type="text">
-                <label for="">Selecione uma forma de pagamento</label>
-                <select id="estado" name="estado">
-                    <option value="pix">Pix</option>
-                    <option value="credito">Cartão de crédito</option>
-                    <option value="debito">Cartão de débito</option>
+            <form action="list.php" method="post">
+                <label>Nome</label>
+                <input type="text" name="nome">
+                <label>Selecione uma forma de pagamento</label>
+                <select id="estado" name="pagamento">
+                    <option value="pix" name="pix">Pix</option>
+                    <option value="credito" name="credito">Cartão de crédito</option>
+                    <option value="debito" name="debito">Cartão de débito</option>
                 </select>
-                <label for="">Número do Cartão</label>
+                <label>Número do Cartão</label>
                 <input type="text">
                 <input type="submit" value="Enviar">
             </form>
