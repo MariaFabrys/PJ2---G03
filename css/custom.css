@@ -33,9 +33,21 @@ header .logo svg{
     margin-right: 100px;
 }
 footer {
-    height: 100px;
+    height: 100%;
     width: 100%;
     background-color: var(--white-trasparent);
     display: flex;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+h4{
+    text-align: center;
+}
+.icon{
+    display: flex;
+}
+.icon i{
+    margin: 5px;
 }
