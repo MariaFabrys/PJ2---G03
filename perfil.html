@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/perfil.css">
     <title>JogosFlix</title>
 </head>
 <body onload="loadProductions()">
@@ -112,34 +113,44 @@
             </a>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="/bestflix/" class="active">Home</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
-                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="/bestflix/" >Home</a></li>
+                    <li><a href="perfil.html" class="active">Perfil</a></li>
+                    <li><a href="comunidade.html">Favoritos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="banner">
-        <img src="assets/img/play.png" alt="">
-    </div>
+ 
     <main>
         <header id="content-header" class="container flex-sb">
             <div class="breadcrumb"> </div>
-            <button onclick="showModal('#modal-cadastrar')">Adicionar Jogos</button>
+            <button onclick="showModal('#modal-cadastrar')">Cadastrar perfil</button>
         </header> 
 
-        <section class="container">
-            <fieldset class="cards">
-
-                <legend>
-                    <h1 class="titulo">Jogos</h1>
-                </legend>
-
-            </fieldset>
-            <div id="jogos">
-
+        <section class="profile">
+            <div class="wrapper">
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <div class="bio">
+                    <div class="nickname">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="follow">
+                        <p><b></b> </p>
+                        <p> <b></b> </p>
+                        <p><b></b></p>  
+                    </div>
+                    <div class="contact">
+                        <p></p>
+                        <p></p>
+                        <p> </p>
+                    </div>
+                    
+                </div>
+                
             </div>
-           
         </section>
     </main>
     
@@ -149,18 +160,14 @@
     </footer>
     <div class="modal" id="modal-cadastrar" onclick="hideModal('#modal-cadastrar', event)">
         <div class="modal-body">
-            <h1>Cadastrar Jogos</h1>
+            <h1>Cadastrar perfil</h1>
             <form onsubmit="insert(event)">
-                <label>Título:</label>
-                <input type="text" name="title">
-                <label>Descrição:</label>
-                <input type="text" name="description">
-                <label>Categoria:</label>
-                <input type="text" name="category">
-                <label>Capa do jogo:</label>
-                <input type="text" name="cover">
-                <label for="">Classificação</label>
-                <input type="text" name="classification">
+                <label>Foto de perfil:</label>
+                <input type="text" name="nameprofile">
+                <label>Nome perfil:</label>
+                <input type="text" name="photoprofile">
+                <label>Biografia:</label>
+                <input type="text" name="biograf">
                 <button type="submit">Cadastrar</button>
             </form>
         </div>
@@ -169,22 +176,18 @@
         <div class="modal-body">
             <h1>Cadastrar Jogos</h1>
             <form onsubmit="edit(event)">
-                <label>Título:</label>
-                <input type="text" name="title">
-                <label>Descrição:</label>
-                <input type="text" name="description">
-                <label>Categoria:</label>
-                <input type="text" name="category">
-                <label>Capa do jogo</label>
-                <input type="text" name="cover">
-                <label for="">Classificação</label>
-                <input type="text" name="classification">
+                <label>Foto de perfil:</label>
+                <input type="text" name="nameprofile">
+                <label>Nome perfil:</label>
+                <input type="text" name="photoprofile">
+                <label>Biografia:</label>
+                <input type="text" name="biograf">
                 <input type="hidden" name="id">
                 <button type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
     
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/perfil.js"></script>
 </body>
 </html>

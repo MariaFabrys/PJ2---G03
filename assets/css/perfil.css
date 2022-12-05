@@ -1,0 +1,92 @@
+
+.photo-profile{
+    display: flex;
+
+}
+.photo-profile :nth-child(1){
+    width: 200px;
+}
+.photo-profile img{
+    border-radius: 40%;
+}
+.img-icon :nth-child(1){
+    width: 20px;
+    cursor: pointer;
+    fill: #7845c0;
+
+
+}
+.img-icon :nth-child(2){
+    width: 20px;
+    margin-right: 200px;
+    cursor: pointer;
+
+
+
+}
+.img-icon{
+    display: flex;
+}
+.wrapper{
+    margin-top: 50px;
+}
+.wrapper, .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    justify-content: space-around; 
+    margin-left: 10px;
+} 
+.follow{
+    display: flex;
+}
+.follow p{
+    margin-right: 15px;
+}
+.nickname{
+    display: flex;
+    margin-bottom: 10px;
+}
+.nickname :nth-child(2){
+    color: red;
+}
+.nickname :nth-child(1){
+    font-weight: bold;
+}
+.nickname p{
+    margin: 5px;
+    margin-top: 30px;
+    
+}
+.contact{
+    margin-top: 10px;
+}
+.contact a{
+    text-decoration: none;
+}
+.photo-feed img{
+    margin: 5px;
+     min-width: 50px;
+     max-width: 350px;
+}
+.photo-feed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .feed #postar{
+    padding: 10px;
+    width: 90px;
+    border-radius: 9%;
+    background-color: #dca7f2;
+    color: black;
+}
+.feed #postar:hover{
+    color: #7845c0;
+}
+
+

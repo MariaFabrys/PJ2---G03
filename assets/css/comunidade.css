@@ -1,0 +1,41 @@
+
+.post{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interacao img{
+    width: 20px;
+    /* align-items: center; */
+}
+
+.pub p{
+    color: black;
+}
+.pub img{
+    width: 500px;
+}
+.bgpost{
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 500px;
+    background-color: white;
+}
+.editdelet{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.editdelet img{
+    width: 20px;
+    fill: black;
+    margin-top: 5px;
+    
+}
+.iconc{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}

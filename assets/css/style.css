@@ -1,0 +1,221 @@
+:root{
+    --primary: #ad2727;
+    --secundary: #008a8a;
+    --grey-0: black;
+    --grey-200: #0c0c0c;
+    --base: black;
+    --grey-600: #818181;
+    --grey-800: #d3d3d3;
+    --grey-1000: #fff;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+body{
+    background-color: var(--grey-200);
+    color: var( --grey-1000);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+}
+a{
+    color: var(--primary);
+    text-decoration: none;
+}
+button{
+    background: var(--secundary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--grey-1000);
+}
+button:hover{
+    background: var(--secundary);
+}
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header{
+    background-color: var(--base);
+    height: 50px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+
+}
+#logo svg{
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 0 0;
+    fill: var(--primary);
+}
+#logo h1{
+    color: var(--primary);
+    margin: 0;
+}
+#logo h1 span{
+    color: var(--grey-1000);
+    font-weight: 400;
+}
+#main-nav{
+    display: flex;
+    align-items: center;
+
+}
+#main-nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#main-nav ul li{
+    list-style-type: none;
+    margin: 0 0 0 20px;
+}
+#main-nav ul li a{
+    color: var( --grey-800);
+    font-size: 1.1rem;
+    padding: 12px;
+}
+#main-nav ul li a:hover{
+    color: var(--grey-1000);
+}
+.active, #main-nav ul li a.active{
+    color: var(--primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary);
+}
+#content-header{
+    margin-top: 20px;
+}
+.section-title{
+    border-left: 2px solid var(--secundary);
+    padding: 10px 0 10px 15px;
+}
+#jogos{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#jogos .card-jogos{
+    position: relative;
+    width: 235px;
+    background: var(--base);
+    border-radius: 10px;
+    margin: 20px;
+}
+#jogos .card-jogos a .mask{
+    position: absolute;
+    background-color: #00000036;
+    width: 100%;
+    height: 340px;
+    padding: 0;
+}
+#jogos .card-jogos a:hover .mask{
+    background-color: #00000000;
+}
+#jogos .card-jogos img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#jogos .card-jogos > div{
+    padding: 10px;
+}
+#jogos .card-jogos div  a h2{
+    margin: 0 0 5px 0;
+    color: var(--grey-1000);
+}
+#jogos .card-jogos div div p{
+    margin: 0 0 5px 0;
+    color: var(--primary);
+}
+#jogos .card-jogos div div img{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+#jogos .card-jogos div div{
+    display: flex;
+}
+#jogos .card-jogos div div img:nth-child(2){
+    margin: 0 10px 0 auto;
+}
+
+body > footer{
+    background: var(--base);
+    color: var(--primary);
+    text-align: center;
+    padding: 100px 50px;
+    margin-top: auto;
+}
+
+.modal{
+    background: #0c0c0c65;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal .modal-body{
+    width: 600px;
+    border-radius: 15px;
+    background: var(--grey-1000);
+    color: var(--grey-0);
+    padding: 30px 20px;
+}
+.modal .modal-body form{
+    display: flex;
+    flex-direction: column;
+}
+.modal .modal-body form label{
+    margin: 15px 0 0 0;
+}
+.modal .modal-body form input[type=text]{
+    height: 30px;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+.modal .modal-body form button{
+    margin: 15px 0 0 0;
+}
+fieldset{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+legend{
+    width: 62px;
+    color: var(--white-trasparent);
+}
+legend h1{
+    margin-left: -4px;
+}
