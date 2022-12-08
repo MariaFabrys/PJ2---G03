@@ -79,7 +79,7 @@ async function deleteProduction(id){
     const response = await fetch('backend/deleteperfil.php?id='+id)
     const result = await response.json()
     if(result?.success){
-        alert('Seu filme foi deletado com sucesso!')
+        alert('Seu perfil foi deletado com sucesso!')
         loadProductions()
     }
 }
@@ -123,16 +123,3 @@ if(result?.success){
     }
 }
 
-// function clearForm(idModal){
-//     const title = document.querySelector(`${idModal} input[name=title]`)
-//     title.value = ''
-//     const description = document.querySelector(`${idModal} input [name=description]`)
-//     description.value=''
-//     const category = document.querySelector(`${idModal} input [name=category]`)
-//     category.value=''
-//     const cover = document.querySelector(`${idModal} input [name=cover]`)
-//     cover.value=''
-//     const classification = document.querySelector(`${idModal} input [name=classification]`)
-//     classification.value=''
-
-// }

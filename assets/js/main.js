@@ -28,7 +28,7 @@ async function insert(event){
 const result = await response.json()
 if(result?.success){
     closeAllModal()
-    alert('seu filme '+result.data.title+' foi cadastrado com sucesso!')
+    alert('seu jogo '+result.data.title+' foi cadastrado com sucesso!')
 
 
     }
@@ -71,7 +71,7 @@ async function deleteProduction(id){
     const response = await fetch('backend/delete.php?id='+id)
     const result = await response.json()
     if(result?.success){
-        alert('Seu filme foi deletado com sucesso!')
+        alert('Seu jogo foi deletado com sucesso!')
         loadProductions()
     }
 }
