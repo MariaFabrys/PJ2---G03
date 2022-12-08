@@ -30,7 +30,7 @@ async function insert(event){
 const result = await response.json()
 if(result?.success){
     closeAllModal()
-    alert('seu post '+result.data.title+' foi publicado com sucesso!')
+    alert('seu post '+result.data+' foi publicado com sucesso!')
 
 
     }

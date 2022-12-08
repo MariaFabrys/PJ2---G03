@@ -115,7 +115,7 @@ async function edit(event){
 const result = await response.json()
 if(result?.success){
     closeAllModal()
-    alert('seu filme '+result.data.title+' foi editado com sucesso!')
+    alert('seu jogo '+result.data.title+' foi editado com sucesso!')
     loadProductions()
 
     }
