@@ -19,7 +19,7 @@
         $stmt->execute();
         $id = $conn->lastInsertId();
         
-        $result["success"]["message"] = "Cadastro com sucesso!";
+        $result["success"]["message"] = "Cadastrado com sucesso!";
 
         $result["data"]["id"] = $id;
         $result["data"]["photoprofile"] = $photoprofile;
