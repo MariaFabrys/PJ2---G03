@@ -44,11 +44,11 @@ async function loadProductions(){
         jogos.map((jogo) => {
             listProductions.innerHTML +=`
             <div class="card-jogos">
-            <a href="filme">
+            <a href="jogo">
                 <img src="${jogo.capa}" alt="${jogo.titulo}">
             </a>
                 <div>
-                    <a href="filme">
+                    <a href="jogo">
                         <h2>${jogo.titulo}</h2>
                     </a>
                     <div>
